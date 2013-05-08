@@ -31,4 +31,4 @@ HTML5BP+HAML Middleman template page:
 [https://github.com/dannyprose/Middleman-HTML5BP-HAML](https://github.com/dannyprose/Middleman-HTML5BP-HAML)
 
 Reveal.js official site:
-[lab.hakim.se/reveal-js/](lab.hakim.se/reveal-js/)
+[http://lab.hakim.se/reveal-js/](http://lab.hakim.se/reveal-js/)
