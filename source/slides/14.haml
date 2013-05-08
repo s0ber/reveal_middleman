@@ -1,8 +1,21 @@
 %section
-  %h2 Clever Quotes
-  %p
-    These guys come in two forms, inline: #{'<q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q>'} and block:
+  %h2 Pretty Code
+  %pre
+    %code{contenteditable: true, data: {trim: true}}
+      :preserve
+        function linkify( selector ) {
+          if( supports3DTransforms ) {
 
-  %blockquote{cite: "http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"}
-    &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-    reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+            var nodes = document.querySelectorAll( selector );
+
+            for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+              var node = nodes[i];
+
+              if( !node.className ) ) {
+                node.className += ' roll';
+              }
+            };
+          }
+        }
+
+  %p Courtesy of #{'<a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>'}.

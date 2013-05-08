@@ -1,21 +1,13 @@
-%section
-  %section{data: {state: "alert"}}
-    %h2 Global State
-    %p
-      Set
-      %code data-state="something"
-      on a slide and
-      %code "something"
-      will be added as a class to the document element when the slide is open. This lets you
-      apply broader style changes, like switching the background.
+%section{data: {state: "customevent"}}
+  %h2 Custom Events
+  %p
+    Additionally custom events can be triggered on a per slide basis by binding to the
+    %code data-state
+    name.
 
-    %a.image.navigate-down{href: "#"}
-      %img{width: "178", height:"238", src: "https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png", alt: "Down arrow"}
-  %section{data: {state: "blackout"}}
-    %h2 "blackout"
-    %a.image.navigate-down{href: "#"}
-      %img{width: "178", height:"238", src: "https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png", alt: "Down arrow"}
-  %section{data: {state: "soothe"}}
-    %h2 "soothe"
-    %a.image.navigate-next{href: "#"}
-      %img{width: "178", height:"238", src: "https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png", alt: "Up arrow", style: "-webkit-transform: rotate(-90deg);"}
+  %pre
+    %code{contenteditable: true, style: "font-size: 18px; margin-top: 20px;", data: {trim: true}}
+      :preserve
+        Reveal.addEventListener( 'customevent', function() {
+          console.log( '\"customevent\" has fired' );
+        } );

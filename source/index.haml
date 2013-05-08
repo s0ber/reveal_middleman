@@ -4,7 +4,7 @@ title: Home Page
 
 .reveal
   .slides
-    - (1..22).each do |i|
+    - (0..21).each do |i|
       - name = "000#{i}"
       - name = name[(name.length - 2)..(name.length)]
       = partial "slides/#{name}"

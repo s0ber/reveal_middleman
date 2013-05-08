@@ -1,13 +1,8 @@
-%section{data: {state: "customevent"}}
-  %h2 Custom Events
+%section
+  %h2 Clever Quotes
   %p
-    Additionally custom events can be triggered on a per slide basis by binding to the
-    %code data-state
-    name.
+    These guys come in two forms, inline: #{'<q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q>'} and block:
 
-  %pre
-    %code{contenteditable: true, style: "font-size: 18px; margin-top: 20px;", data: {trim: true}}
-      :preserve
-        Reveal.addEventListener( 'customevent', function() {
-          console.log( '\"customevent\" has fired' );
-        } );
+  %blockquote{cite: "http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"}
+    &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+    reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
