@@ -30,12 +30,5 @@
       = javascript_include_tag 'lib/js/html5shiv.js'
 
   %body
-    .reveal
-
-      .slides
-        - (1..22).each do |i|
-          - name = "000#{i}"
-          - name = name[(name.length - 2)..(name.length)]
-          = partial "slides/#{name}"
-
+    = yield
     = javascript_include_tag 'site'

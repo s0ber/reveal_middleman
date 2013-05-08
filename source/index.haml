@@ -1,6 +1,10 @@
 ---
-title: Some title
-description:
+title: Home Page
 ---
 
-%h1.ololo Some title
+.reveal
+  .slides
+    - (1..22).each do |i|
+      - name = "000#{i}"
+      - name = name[(name.length - 2)..(name.length)]
+      = partial "slides/#{name}"
